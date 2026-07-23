@@ -62,7 +62,7 @@ utterance_id|sinhala_text|speaker_id
 Upload `data/prepared/sinhala_vits` to:
 
 ```text
-MyDrive/sinhala-vits/dataset/
+MyDrive/sinhala_vits/dataset/
 ```
 
 ## 3. Train in Google Colab
