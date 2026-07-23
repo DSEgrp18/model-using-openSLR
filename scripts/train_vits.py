@@ -130,7 +130,7 @@ def main() -> int:
 
     model_args = VitsArgs(
         use_speaker_embedding=True,
-        embedded_speaker_dim=256,
+        speaker_embedding_channels=256,
         num_speakers=0,
     )
 
