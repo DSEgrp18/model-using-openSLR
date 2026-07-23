@@ -80,10 +80,11 @@ If `pip install TTS` fails on Colab Python 3.12, use:
 
 ```bash
 pip uninstall -y TTS trainer
-pip install -U "coqui-tts[notebooks]"
+pip install -U "coqui-tts[notebooks]" "transformers>=4.57.0"
 ```
 
 Imports stay the same (`from TTS...`, `from trainer import Trainer`).
+If you see `isin_mps_friendly` ImportError, upgrade transformers with the command above, then restart the runtime and re-run the install cell.
 
 ### Suggested Colab settings
 
