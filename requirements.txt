@@ -1,0 +1,10 @@
+# Local prep (Windows)
+numpy>=1.24
+soundfile>=0.12
+librosa>=0.10
+tqdm>=4.66
+
+# Colab / GPU training (install these in Colab; do NOT use old `TTS` package)
+# coqui-tts[notebooks]>=0.27.3
+# torch
+# torchaudio

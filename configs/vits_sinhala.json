@@ -1,0 +1,27 @@
+{
+  "model": "vits",
+  "run_name": "sinhala_vits_openslr30",
+  "sample_rate": 22050,
+  "batch_size": 16,
+  "eval_batch_size": 8,
+  "epochs": 1000,
+  "lr": 0.0002,
+  "mixed_precision": true,
+  "use_speaker_embedding": true,
+  "embedded_speaker_dim": 256,
+  "use_phonemes": false,
+  "text_cleaner": "basic_cleaners",
+  "max_audio_len_seconds": 12,
+  "max_text_len": 220,
+  "dataset": {
+    "formatter": "sinhala_openslr",
+    "meta_file_train": "metadata_train.csv",
+    "meta_file_val": "metadata_val.csv",
+    "language": "si"
+  },
+  "notes": [
+    "Multi-speaker VITS for OpenSLR Resource 30 Sinhala.",
+    "Train on Google Colab GPU; local Windows machine is for data prep only.",
+    "Official transcript file has fewer rows than cleaned WAVs; unmatched audio is skipped."
+  ]
+}
